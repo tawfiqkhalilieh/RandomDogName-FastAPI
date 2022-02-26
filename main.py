@@ -2,7 +2,7 @@ import json
 import random
 from fastapi import *
 
-@app.get("/dogs")
+@app.get("/")
 def dogs():
     with open('dogs.json', 'r') as f:
         rnd = random.randrange(706)
