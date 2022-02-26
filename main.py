@@ -2,6 +2,8 @@ import json
 import random
 from fastapi import *
 
+app = FastAPI()
+
 @app.get("/")
 def dogs():
     with open('dogs.json', 'r') as f:
